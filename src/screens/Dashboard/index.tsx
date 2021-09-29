@@ -1,5 +1,6 @@
 import React from "react";
-import { Container, Header, PowerIcon, UserGreeting, UserGreetingBox, UserImage, UserInfo, UserName, UserWrapper } from './styles';
+import { HightlightCard } from "../../components/HightlightCard";
+import { Container, Header, HighlightCards, PowerIcon, UserGreeting, UserGreetingBox, UserImage, UserInfo, UserName, UserWrapper } from './styles';
 
 export function Dashboard() {
     return (
@@ -16,6 +17,11 @@ export function Dashboard() {
                     <PowerIcon name="power" />
                 </UserWrapper>
             </Header>
+            <HighlightCards>
+                <HightlightCard/>
+                <HightlightCard/>
+                <HightlightCard/>
+            </HighlightCards>
         </Container>
     )
 }
